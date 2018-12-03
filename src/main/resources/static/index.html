@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+        
+        <!-- Bootstrap core CSS -->
+        <link href="js/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="js/cover.css" rel="stylesheet">
+        <title>Lab7-ARSW</title>
+    </head>
+    
+    
+    <body style="background-color:#1abc9c;">
+        <div class="inner">
+            <center>
+                <br><br>
+                    <h3 class="masthead-brand">Ingrese la accion que desea consultar y seleccione el historico.</h3>
+                    <nav class="nav nav-masthead justify-content-center"></nav>
+                    <br><br><br><br>
+                    <form name="formu" id="formu">
+                        Action:<input type="text" id="nombre" name="nombre">
+                        <br><br>
+                        <select id = "id"  onchange="">
+                            <option value="selecionar">Seleccionar</option>
+                            <option value="intraDia">Intra-dia</option>
+                            <option value="Diaria">Diaria</option>
+                            <option value="Semanal">Semanal</option>
+                            <option value="Mensual">Mensual</option>
+                        </select>
+                        <br><br><br><br><br><br><br><br><br><br>
+                        <input type="button" value="consultar" id="consultar" name="consultar">
+                    </form>
+            </center>
+        </div>
+        
+        
+        
+        
+        <br><br><br><br><br><br>
+        <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        </div>
+      </footer>
+    
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-3.js"> <!--integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"--></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/ConsultController.js"></script>
+    <script src="js/ConsultRestController.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </body>
+</html>
