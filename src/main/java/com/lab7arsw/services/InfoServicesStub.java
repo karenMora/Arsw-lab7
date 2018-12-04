@@ -22,10 +22,17 @@ public class InfoServicesStub implements InfoServices{
     HttpConnection conexion;
     
     @Override
-    public Object getInfo(String accion, String select) throws InfoServicesException {
-        conexion.connect(accion,select);
-        conexion.run();
+    public String getInfo(String accion, String select) throws InfoServicesException {
+        /*
+        conexion.connect(accion, select);
+        try {
+            conexion.run();
+            return conexion.getResult();
+        } catch (Exception ex) {
+            Logger.getLogger(InfoServicesStub.class.getName()).log(Level.SEVERE, null, ex);
+        }
         return conexion.getResult();
+        */
+        return "hola";
     }
-    
 }
